@@ -1,12 +1,26 @@
 <mat-tab-group mat-align-tabs="start" backgroundColor="primary">
+
     <mat-tab label="BATCRONOLOGIA ">
         <ng-template mat-tab-label>
             BATCRONOLOGIA 🦇
         </ng-template>
         <app-teste></app-teste>
     </mat-tab>
-    <mat-tab label="Cronologia">Content 2</mat-tab>
-    <mat-tab label="Personagens">Content 3</mat-tab>
-    <mat-tab label="Artistas">Content 3</mat-tab>
-    <mat-tab label="Sobre">Content 3</mat-tab>
+    
+    <mat-tab label="Cronologia">
+        <app-cronologia></app-cronologia>
+    </mat-tab>
+    
+    <mat-tab label="Personagens">
+        <app-personagens></app-personagens>
+    </mat-tab>
+    
+    <mat-tab label="Artistas">
+        <app-artistas></app-artistas>
+    </mat-tab>
+    
+    <mat-tab label="Sobre">
+        <app-sobre></app-sobre>
+    </mat-tab>
+
 </mat-tab-group>
