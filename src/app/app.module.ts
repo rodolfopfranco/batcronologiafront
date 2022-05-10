@@ -15,6 +15,12 @@ import { CronologiaComponent } from './view/cronologia/cronologia.component';
 import { PersonagensComponent } from './view/personagens/personagens.component';
 import { ArtistasComponent } from './view/artistas/artistas.component';
 import { SobreComponent } from './view/sobre/sobre.component'; 
+import { ArtistService } from './shared/service/artist.service';
+import { BookChronoService } from './shared/service/book-chrono.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+
+import {CdkTableModule} from '@angular/cdk/table'; 
 
 @NgModule({
   declarations: [
@@ -34,9 +40,16 @@ import { SobreComponent } from './view/sobre/sobre.component';
     NoopAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    CdkTableModule,
+    MatTableModule,
+
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ArtistService,
+    BookChronoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
