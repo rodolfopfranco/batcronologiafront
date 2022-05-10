@@ -1,11 +1,7 @@
-<div class="header">
-    <div class="container">
-        <div class = "col-md-6">
-            <a href="" class="title">Batcronologia</a>
-            <a [routerLink]="['/teste']" class="btn btn-primary">Cronologia</a>
-            <a [routerLink]="['/']" class="btn btn-primary">Personagens</a>
-            <a [routerLink]="['/']" class="btn btn-primary">Artistas</a>
-            <a [routerLink]="['/']" class="btn btn-primary">Sobre</a>
-        </div>
-    </div>
-</div>
+<mat-tab-group mat-align-tabs="start" backgroundColor="primary">
+    <mat-tab label="Teste"><app-teste></app-teste></mat-tab>
+    <mat-tab label="Cronologia">Content 2</mat-tab>
+    <mat-tab label="Personagens">Content 3</mat-tab>
+    <mat-tab label="Artistas">Content 3</mat-tab>
+    <mat-tab label="Sobre">Content 3</mat-tab>
+</mat-tab-group>

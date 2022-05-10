@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TesteComponent } from './teste/teste.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     TesteComponent,
     TopMenuComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
