@@ -1,0 +1,40 @@
+.example-card {
+    max-width: 13%;
+  }
+
+.mat-card{
+    margin: 1rem;
+    display: inline-block;
+}
+
+.mat-card-image{
+    display: block;
+    margin: auto; 
+}
+
+
+picture{
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .example-card {
+        max-width: 50%;
+      }
+    
+    .mat-card{
+        margin: 1rem;
+        display: inline-block;
+    }
+    
+    .mat-card-image{
+        display: block;
+        margin: auto; 
+    }
+    
+    
+    picture{
+        display: flex;
+    }
+    
+}

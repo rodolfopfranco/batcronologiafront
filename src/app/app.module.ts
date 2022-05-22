@@ -20,7 +20,8 @@ import { BookChronoService } from './shared/service/book-chrono.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 
-import {CdkTableModule} from '@angular/cdk/table'; 
+import {CdkTableModule} from '@angular/cdk/table';
+import { ComicCardComponent } from './view/cronologia/comic-card/comic-card.component'; 
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     CronologiaComponent,
     PersonagensComponent,
     ArtistasComponent,
-    SobreComponent
+    SobreComponent,
+    ComicCardComponent
   ],
   
   imports: [
