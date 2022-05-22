@@ -23,8 +23,4 @@ export class ArtistasComponent implements OnInit {
     );
   }
 
-  listArtist(): void{
-    this.artistas.forEach(a => console.log(a));
-  }
-
 }
